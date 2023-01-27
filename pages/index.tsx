@@ -39,6 +39,7 @@ const Home: NextPage = () => {
                 lead.timestamp.toDate(),
                 "dddd, mmmm dS, yyyy, h:MM:ss TT"
               ),
+              lead.size,
             ],
           ];
         });
@@ -74,6 +75,7 @@ const Home: NextPage = () => {
                 <th>Number</th>
                 <th>Wilaya</th>
                 <th>Address</th>
+                <th>Size</th>
                 <th>Date and Time</th>
               </tr>
             </thead>
@@ -85,6 +87,7 @@ const Home: NextPage = () => {
                   <td>{lead.number}</td>
                   <td>{lead.province}</td>
                   <td>{lead.address}</td>
+                  <td>{lead.size}</td>
                   <td>
                     {dateFormat(
                       lead.timestamp.toDate(),

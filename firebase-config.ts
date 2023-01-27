@@ -13,15 +13,22 @@ import { getFirestore } from "@firebase/firestore";
 //   messagingSenderId: "1090140081949",
 //   appId: "1:1090140081949:web:aea814751c4fa6628d5bf4",
 // };
+// const firebaseConfig = {
+//   apiKey: "AIzaSyDO1gQvh58aHF2W0rMWatnwCvj59kySBnM",
+//   authDomain: "agiva-traffic.firebaseapp.com",
+//   projectId: "agiva-traffic",
+//   storageBucket: "agiva-traffic.appspot.com",
+//   messagingSenderId: "917206257212",
+//   appId: "1:917206257212:web:2d9e7534bc743e32923d39",
+// };
 const firebaseConfig = {
-  apiKey: "AIzaSyDO1gQvh58aHF2W0rMWatnwCvj59kySBnM",
-  authDomain: "agiva-traffic.firebaseapp.com",
-  projectId: "agiva-traffic",
-  storageBucket: "agiva-traffic.appspot.com",
-  messagingSenderId: "917206257212",
-  appId: "1:917206257212:web:2d9e7534bc743e32923d39",
+  apiKey: "AIzaSyAGRc8INmAE6gGc7zhBNgaDsONI8KHlh44",
+  authDomain: "baby-75541.firebaseapp.com",
+  projectId: "baby-75541",
+  storageBucket: "baby-75541.appspot.com",
+  messagingSenderId: "32290509616",
+  appId: "1:32290509616:web:cdb48998d8f9a252d7aef5",
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
