@@ -32,25 +32,30 @@ const Home: NextPage = () => {
             ...csv,
             [
               lead.fullName,
+              "",
               lead.number,
-              lead.province,
+              "",
               lead.commune,
+              lead.province,
+              "",
+              Math.floor(Math.random() * (1000 - 1) + 1),
               dateFormat(
                 lead.timestamp.toDate(),
                 "dddd, mmmm dS, yyyy, h:MM:ss TT"
               ),
-              lead.size,
+              // lead.size,
             ],
           ];
         });
-        const csvData = [
-          ["firstname", "lastname", "email"],
-          ["Ahmed", "Tomi", "ah@smthing.co.com"],
-          ["Raed", "Labes", "rl@smthing.co.com"],
-          ["Yezzi", "Min l3b", "ymin@cocococo.com"],
-        ];
-        console.log(csvData);
-        setLeadsCsv(csvData);
+        setLeadsCsv(csv);
+        // const csvData = [
+        //   ["firstname", "lastname", "email"],
+        //   ["Ahmed", "Tomi", "ah@smthing.co.com"],
+        //   ["Raed", "Labes", "rl@smthing.co.com"],
+        //   ["Yezzi", "Min l3b", "ymin@cocococo.com"],
+        // ];
+        // console.log(csvData);
+        // setLeadsCsv(csvData);
         console.log("the csv: ", csv);
         console.log(leadsData);
       } catch (error) {
@@ -63,7 +68,7 @@ const Home: NextPage = () => {
     <div>
       <h1 className="text-5xl font-bold mx-10 capitalize">leads</h1>
       <div className="mx-10">
-        <CSVLink className="btn my-10" data={leads}>
+        <CSVLink className="btn my-10" data={leadsCsv}>
           Export Leads
         </CSVLink>
         <div className="overflow-x-auto">
