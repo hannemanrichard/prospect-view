@@ -34,7 +34,7 @@ const Home: NextPage = () => {
               lead.fullName,
               lead.number,
               lead.province,
-              lead.address,
+              lead.commune,
               dateFormat(
                 lead.timestamp.toDate(),
                 "dddd, mmmm dS, yyyy, h:MM:ss TT"
@@ -74,8 +74,9 @@ const Home: NextPage = () => {
                 <th>Full Name</th>
                 <th>Number</th>
                 <th>Wilaya</th>
-                <th>Address</th>
-                <th>Size</th>
+
+                <th>Commune</th>
+                {/* <th>Size</th> */}
                 <th>Date and Time</th>
               </tr>
             </thead>
@@ -86,8 +87,8 @@ const Home: NextPage = () => {
                   <td>{lead.fullName}</td>
                   <td>{lead.number}</td>
                   <td>{lead.province}</td>
-                  <td>{lead.address}</td>
-                  <td>{lead.size}</td>
+                  <td>{lead.commune}</td>
+                  {/* <td>{lead.size}</td> */}
                   <td>
                     {dateFormat(
                       lead.timestamp.toDate(),

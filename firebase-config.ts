@@ -22,12 +22,12 @@ import { getFirestore } from "@firebase/firestore";
 //   appId: "1:917206257212:web:2d9e7534bc743e32923d39",
 // };
 const firebaseConfig = {
-  apiKey: "AIzaSyAGRc8INmAE6gGc7zhBNgaDsONI8KHlh44",
-  authDomain: "baby-75541.firebaseapp.com",
-  projectId: "baby-75541",
-  storageBucket: "baby-75541.appspot.com",
-  messagingSenderId: "32290509616",
-  appId: "1:32290509616:web:cdb48998d8f9a252d7aef5",
+  apiKey: "AIzaSyA5TjERPK9uEHKDAsfmfNFBfcc-sI0LIwc",
+  authDomain: "newlanding-12a92.firebaseapp.com",
+  projectId: "newlanding-12a92",
+  storageBucket: "newlanding-12a92.appspot.com",
+  messagingSenderId: "1079999974653",
+  appId: "1:1079999974653:web:8bb986005c372bd4af0294",
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
